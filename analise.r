@@ -1,22 +1,26 @@
 presos.raw <- read.csv ("presos.csv")
+nrow (presos.raw)
+table (presos.raw$genero)
 
 presos <- subset (presos.raw, data.nascimento != "")
 nrow (presos)
+
 presos$data.nascimento <- as.Date (presos$data.nascimento)
 presos$idade <- as.numeric (Sys.Date() - presos$data.nascimento) / 365.25
-presos <- subset (presos, idade >= 18 & idade < 70)
 
-nrow (presos.raw)
+nrow (subset (presos, idade < 18))
+nrow (subset (presos, idade > 80))
+
+presos <- subset (presos, idade >= 18 & idade < 80)
 nrow (presos)
-
-table (presos.raw$genero)
 table (presos$genero)
+
+summary (presos$idade)
 
 n <- nrow (presos)
 length (which (presos$idade > 45 & presos$idade < 55)) / n
 length (which (presos$idade > 40 & presos$idade < 60)) / n
 
-summary (presos$idade)
 aggregate (presos, idade ~ genero, mean)
 anova (lm (idade ~ genero, presos))
 
