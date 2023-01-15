@@ -3,25 +3,25 @@
 
 ## Introdução
 
-Este repositório contém os dados publicados pela Secretaria de Estado de Administração Penitenciária do Distrito Federal (SEAPE), assim que o programa em R para análise demográfica dos mesmos.
+Este repositório contém os dados publicados pela Secretaria de Estado de Administração Penitenciária do Distrito Federal (SEAPE-DF), assim que o programa em R para análise demográfica dos mesmos.
 
 A lista de pessoas presas nos atos terroristas na Praça dos Três Poderes é atualizada frequentemente 
-na [ṕagina da SEAPE](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), contendo os nomes completos e as datas de nascimento das pessoas.
+na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), contendo os nomes completos e as datas de nascimento das pessoas.
 
 
 ## Análise
 
-A [lista atual](presos.csv), contém 1426 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1398 nomes, na listagem publicada em 14 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Um dado duplicado foi suprimido.
+A [lista atual](presos.csv), contém 1430 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1395 nomes, na listagem publicada em 15 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. 
 
-Destas 1426 pessoas, 494 são mulheres e 932 são homens. Uma pessoa com idade inferior a 18 anos e uma pessoa com idade de 86 anos foram suprimidas da análise, pois acredito tratar-se de erros de digitação. A data de nascimento de uma pessoa foi corrigida de “1696” para “1996”. A análise aqui presente é assim relativa a 1424 pessoas (494 mulheres e 930 homens).
+Destas 1430 pessoas, 495 são mulheres e 935 são homens. Uma pessoa com idade inferior a 18 anos e uma pessoa com idade de 123 anos foram suprimidas da análise, pois acredito tratar-se de erros de digitação. A data de nascimento de uma pessoa foi corrigida de “1696” para “1996”. A análise aqui presente é assim relativa a 1428 pessoas (494 mulheres e 934 homens).
 
 A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupadas em faixas etárias de 5 anos. Mulheres são representadas na cor rosa e homens na cor azul.
 
 ![figure](histograma-idades.png)
 
-A idade mínima é de 18,1 anos e a máxima de 74.8 anos. 66% das pessoas têm entre 40 e 60 anos e 35% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
+A idade mínima é de 18,1 anos e a máxima de 74.8 anos. 66% das pessoas têm entre 40 e 60 anos e 35,2% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
 
-A mediana de idade das mulheres é de 47,4 anos e a dos homens de 44,9 anos. A média de idade das mulheres é de 46,2 anos e a dos homens é de 43,8 anos. Esta diferença de idade de quase 2 anos e meio entre homens e mulheres é estatisticamente significativa (_p_ < 0.001).
+A mediana de idade das mulheres é de 47,8 anos e a dos homens de 44,9 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_p_ < 0.001).
 
 Cabe observar que a faixa de idade com maior representatividade entre as mulheres é entre 50 e 55 anos.
 
