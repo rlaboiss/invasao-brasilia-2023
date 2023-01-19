@@ -22,10 +22,10 @@ def main():
         m = re.match(r"\x0c?[0-9]+ (.+)$", line.decode("utf-8"))
         if m:
             names.append(m.group(1))
-        m = re.match(r"^([0-9][0-9]\.[0-9][0-9]\.[0-9][0-9][0-9][0-9])$",
+        m = re.match(r"^([0-9]+)\.([0-9]+)\.([0-9][0-9][0-9][0-9])$",
                      line.decode("utf-8"))
         if m:
-            dates.append("-".join(reversed(m.group(1).split("."))))
+            dates.append(f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}")
 
     if len(names) != len(dates):
         sys.stderr.write(f"{prog}:E: Different number of names and dates\n")

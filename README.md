@@ -11,15 +11,15 @@ na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), c
 
 ## Análise
 
-A [lista atual](presos.csv), contém 1430 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1395 nomes, na listagem publicada em 15 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. 
+A [lista atual](presos.csv), contém 1430 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1382 nomes, na listagem publicada em 19 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. 
 
-Destas 1430 pessoas, 495 são mulheres e 935 são homens. Uma pessoa com idade inferior a 18 anos e uma pessoa com idade de 123 anos foram suprimidas da análise, pois acredito tratar-se de erros de digitação. A data de nascimento de uma pessoa foi corrigida de “1696” para “1996”. A análise aqui presente é assim relativa a 1428 pessoas (494 mulheres e 934 homens).
+Destas 1430 pessoas, 495 são mulheres e 935 são homens. Uma pessoa com idade de 123 anos foi suprimida da análise, pois acredito tratar-se de um erro de digitação. A análise aqui presente é assim relativa a 1429 pessoas (494 mulheres e 935 homens).
 
 A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupadas em faixas etárias de 5 anos. Mulheres são representadas na cor rosa e homens na cor azul.
 
 ![figure](histograma-idades.png)
 
-A idade mínima é de 18,1 anos e a máxima de 74.8 anos. 66% das pessoas têm entre 40 e 60 anos e 35,2% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
+A idade mínima é de 18,1 anos e a máxima de 74.8 anos. 66% das pessoas têm entre 40 e 60 anos e 35,1% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
 
 A mediana de idade das mulheres é de 47,8 anos e a dos homens de 44,9 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_p_ < 0.001).
 
