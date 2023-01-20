@@ -47,3 +47,11 @@ text (mean.m - 6, -15, adj = c (1, 0.5), col = "#0000ff80",
 legend ("topleft", legend = c("mulheres", "homens"), pch = 15,
         col = c("pink", "cyan"), inset = 0.05)
 dev.off ()
+
+uf.count <- sort (table (presos$uf), decreasing = TRUE)
+cat ("\n|estado|número|\n|-|-|\n")
+for (i in names (uf.count))
+    if (i != "")
+        cat (sprintf ("|%s|%s|\n", i, uf.count [i]))
+
+length (which (presos$uf == ""))
