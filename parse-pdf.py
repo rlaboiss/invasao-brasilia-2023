@@ -18,21 +18,30 @@ def main():
 
     names = []
     dates = []
+    states = []
+    chars = set()
+
     for line in proc.stdout:
-        m = re.match(r"\x0c?[0-9]+ (.+)$", line.decode("utf-8"))
+        m = re.match(r"\x0c?([A-Z].+)$", line.decode("utf-8"))
+        if m:
+            for x in m.group(1):
+                chars.add(x)
+
+        m = re.match(r"\x0c?([A-ZÇÃÔÉÚÕÂÁÍÊ]+ [A-ZÇÃÔÉÚÕÂÁÍÊ ]+)$", line.decode("utf-8"))
         if m:
             names.append(m.group(1))
-        m = re.match(r"^([0-9]+)\.([0-9]+)\.([0-9][0-9][0-9][0-9])$",
+        m = re.match(r"^([0-9]+)\.([0-9]+)\.([0-9][0-9][0-9][0-9]) ([A-Z][A-Z])$",
                      line.decode("utf-8"))
         if m:
             dates.append(f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}")
+            states.append(m.group(4))
 
     if len(names) != len(dates):
         sys.stderr.write(f"{prog}:E: Different number of names and dates\n")
         exit(1)
 
-    df = pd.DataFrame({'name': names, 'date': dates})
-    df.to_csv('names-dates.csv', index=False)
+    df = pd.DataFrame({'name': names, 'date': dates, 'uf': states})
+    df.to_csv(sys.stdout, index=False)
 
 
 if __name__ == "__main__":
