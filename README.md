@@ -25,35 +25,35 @@ Cabe observar que a faixa de idade com maior representatividade entre as mulhere
 
 O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 43 pessoas):
 
-|estado|número|
-|-|-|
-|SP|272|
-|MG|200|
-|PR|132|
-|MT|103|
-|RS|103|
-|SC|88|
-|DF|82|
-|BA|69|
-|GO|49|
-|RO|41|
-|PA|40|
-|RJ|33|
-|MS|32|
-|CE|25|
-|TO|20|
-|ES|18|
-|PB|15|
-|AL|13|
-|MA|11|
-|PE|11|
-|RN|9|
-|PI|8|
-|AM|6|
-|AC|3|
-|AP|1|
-|RR|1|
-|SE|1|
+|estado|número|porcentagem|
+|-|-|-|
+|SP|272|19.6%|
+|MG|200|14.4%|
+|PR|132|9.5%|
+|MT|103|7.4%|
+|RS|103|7.4%|
+|SC|88|6.3%|
+|DF|82|5.9%|
+|BA|69|5.0%|
+|GO|49|3.5%|
+|RO|41|3.0%|
+|PA|40|2.9%|
+|RJ|33|2.4%|
+|MS|32|2.3%|
+|CE|25|1.8%|
+|TO|20|1.4%|
+|ES|18|1.3%|
+|PB|15|1.1%|
+|AL|13|0.9%|
+|MA|11|0.8%|
+|PE|11|0.8%|
+|RN|9|0.6%|
+|PI|8|0.6%|
+|AM|6|0.4%|
+|AC|3|0.2%|
+|AP|1|0.1%|
+|RR|1|0.1%|
+|SE|1|0.1%|
 
 
 ## Author

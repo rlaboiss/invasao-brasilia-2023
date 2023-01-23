@@ -50,9 +50,11 @@ legend ("topleft", legend = c("mulheres", "homens"), pch = 15,
 dev.off ()
 
 uf.count <- sort (table (presos$uf), decreasing = TRUE)
-cat ("\n|estado|número|\n|-|-|\n")
+uf.count <- uf.count [which (names (uf.count) != "")]
+cat ("\n|estado|número|porcentagem|\n|-|-|-|\n")
+s <- sum (uf.count)
 for (i in names (uf.count))
-    if (i != "")
-        cat (sprintf ("|%s|%s|\n", i, uf.count [i]))
+    cat (sprintf ("|%s|%s|%.1f%%|\n", i, uf.count [i],
+                  100 * (uf.count [i] / s)))
 
 length (which (presos$uf == ""))
