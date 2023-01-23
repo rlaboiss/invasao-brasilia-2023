@@ -19,7 +19,7 @@ A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupa
 
 A idade mínima é de 18,0 anos e a máxima de 74,8 anos. 66,3% das pessoas têm entre 40 e 60 anos e 35,2% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
 
-A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,8 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_p_ < 0.001).
+A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,8 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_t_[1122.6] = 4.72, _p_ < 0.001).
 
 Cabe observar que a faixa de idade com maior representatividade entre as mulheres é entre 50 e 55 anos.
 

@@ -26,7 +26,7 @@ length (which (presos$idade > 40 & presos$idade < 60)) / n
 mean.f <- mean.df$idade [1]
 mean.m <- mean.df$idade [2]
 aggregate (presos, idade ~ genero, median)
-anova (lm (idade ~ genero, presos))
+t.test (idade ~ genero, presos)
 
 h <- hist (presos$idade)
 max.count <- max (h$counts)
