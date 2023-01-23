@@ -64,7 +64,7 @@ O número de pessoas por estado está indicado na tabela abaixo (a informação 
 |RR|1|0.1%|
 |SE|1|0.1%|
 
-O número de presos por estado está relacionada à [porcentagem de votos em
+O número de presos por estado está relacionado à [porcentagem de votos em
 Jair Bolsonaro no segundo turno da eleição presidencial de
 2022](eleicao-2022.csv), como indica o gráfico abaixo.
 
