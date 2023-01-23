@@ -51,7 +51,7 @@ dev.off ()
 
 uf.count <- sort (table (presos$uf), decreasing = TRUE)
 uf.count <- uf.count [which (names (uf.count) != "")]
-cat ("\n|estado|número|porcentagem|\n|-|-|-|\n")
+cat ("\n|estado|número de pessoas presas|porcentagem do total|\n|-|-|-|\n")
 s <- sum (uf.count)
 for (i in names (uf.count))
     cat (sprintf ("|%s|%s|%.1f%%|\n", i, uf.count [i],

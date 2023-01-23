@@ -34,7 +34,7 @@ Cabe observar que a faixa de idade com maior representatividade entre as mulhere
 
 O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 43 pessoas):
 
-|estado|número|porcentagem|
+|estado|número de pessoas presas|porcentagem do total|
 |-|-|-|
 |SP|272|19.6%|
 |MG|200|14.4%|
