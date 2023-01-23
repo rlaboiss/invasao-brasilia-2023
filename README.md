@@ -11,34 +11,34 @@ na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), c
 
 ## Análise
 
-A [lista atual](presos.csv), contém 1430 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1382 nomes, na listagem publicada em 20 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1430 pessoas, 495 são mulheres e 935 são homens. 
+A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1388 nomes, na listagem publicada em 22 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
 
 A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupadas em faixas etárias de 5 anos. Mulheres são representadas na cor rosa e homens na cor azul. Todas as idades relatadas nesta análise são relativas ao dia 8 de janeiro de 2023.
 
 ![figure](histograma-idades.png)
 
-A idade mínima é de 18,1 anos e a máxima de 74.8 anos. 66,3% das pessoas têm entre 40 e 60 anos e 35,1% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
+A idade mínima é de 18,0 anos e a máxima de 74,8 anos. 66,3% das pessoas têm entre 40 e 60 anos e 35,2% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
 
-A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,9 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_p_ < 0.001).
+A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,8 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_p_ < 0.001).
 
 Cabe observar que a faixa de idade com maior representatividade entre as mulheres é entre 50 e 55 anos.
 
-O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 46 pessoas):
+O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 43 pessoas):
 
 |estado|número|
 |-|-|
-|SP|271|
+|SP|272|
 |MG|200|
-|PR|131|
+|PR|132|
 |MT|103|
-|RS|102|
-|SC|89|
-|DF|83|
-|BA|67|
+|RS|103|
+|SC|88|
+|DF|82|
+|BA|69|
 |GO|49|
-|RO|42|
+|RO|41|
 |PA|40|
-|RJ|34|
+|RJ|33|
 |MS|32|
 |CE|25|
 |TO|20|
@@ -51,6 +51,7 @@ O número de pessoas por estado está indicado na tabela abaixo (a informação 
 |PI|8|
 |AM|6|
 |AC|3|
+|AP|1|
 |RR|1|
 |SE|1|
 
