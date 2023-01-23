@@ -58,3 +58,27 @@ for (i in names (uf.count))
                   100 * (uf.count [i] / s)))
 
 length (which (presos$uf == ""))
+
+election <- read.csv ("eleicao-2022.csv")
+election$count <- NA
+for (i in names(uf.count))
+    election$count [which (election$uf == i)] <- uf.count [i]
+which (uf.count <= 5)
+election <- subset (election, count > 5)
+cor.test (election$votos.bolsonaro, log (election$count))
+
+png (file = "votos-bolsonaro-numero-presos.png", height = 640, width = 640,
+     pointsize = 24)
+par (mar = c (5, 4, 0.1, 0.1))
+plot (election$votos.bolsonaro, election$count,
+      log = "y", type = "n", las = 1, bty = "n",
+      xlab = "% de votos em Bolsonaro 2º turno 2022",
+      ylab = "número de presos")
+text (election$votos.bolsonaro, election$count, labels = election$uf)
+fm <- lm (log (count) ~ votos.bolsonaro, election)
+x.pred <- seq (min (election$votos.bolsonaro), max (election$votos.bolsonaro),
+               by = 0.1)
+lines (x.pred, exp (predict (fm,
+                             newdata = data.frame (votos.bolsonaro = x.pred))),
+       lwd = 5, col = "#ff000080")
+dev.off ()
