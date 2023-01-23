@@ -6,7 +6,8 @@ presos <- subset (presos.raw, data.nascimento != "")
 nrow (presos)
 
 presos$data.nascimento <- as.Date (presos$data.nascimento)
-presos$idade <- as.numeric (Sys.Date() - presos$data.nascimento) / 365.25
+presos$idade <- as.numeric (as.Date ("2023-01-08")
+                            - presos$data.nascimento) / 365.25
 
 nrow (subset (presos, idade < 18))
 nrow (subset (presos, idade >= 80))

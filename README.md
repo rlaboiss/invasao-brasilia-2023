@@ -13,7 +13,7 @@ na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), c
 
 A [lista atual](presos.csv), contém 1430 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1382 nomes, na listagem publicada em 20 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1430 pessoas, 495 são mulheres e 935 são homens. 
 
-A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupadas em faixas etárias de 5 anos. Mulheres são representadas na cor rosa e homens na cor azul.
+A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupadas em faixas etárias de 5 anos. Mulheres são representadas na cor rosa e homens na cor azul. Todas as idades relatadas nesta análise são relativas ao dia 8 de janeiro de 2023.
 
 ![figure](histograma-idades.png)
 
