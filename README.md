@@ -34,43 +34,45 @@ Cabe observar que a faixa de idade com maior representatividade entre as mulhere
 
 O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 43 pessoas):
 
-|estado|número de pessoas presas|porcentagem do total|
-|-|-|-|
-|SP|272|19.6%|
-|MG|200|14.4%|
-|PR|132|9.5%|
-|MT|103|7.4%|
-|RS|103|7.4%|
-|SC|88|6.3%|
-|DF|82|5.9%|
-|BA|69|5.0%|
-|GO|49|3.5%|
-|RO|41|3.0%|
-|PA|40|2.9%|
-|RJ|33|2.4%|
-|MS|32|2.3%|
-|CE|25|1.8%|
-|TO|20|1.4%|
-|ES|18|1.3%|
-|PB|15|1.1%|
-|AL|13|0.9%|
-|MA|11|0.8%|
-|PE|11|0.8%|
-|RN|9|0.6%|
-|PI|8|0.6%|
-|AM|6|0.4%|
-|AC|3|0.2%|
-|AP|1|0.1%|
-|RR|1|0.1%|
-|SE|1|0.1%|
+|estado|número de pessoas presas|porcentagem do total|presos/população|
+|-|-|-|-|
+|SP|272|19.6%|5.91|
+|MG|200|14.4%|9.65|
+|PR|132|9.5%|11.15|
+|MT|103|7.4%|27.22|
+|RS|103|7.4%|9.29|
+|SC|88|6.3%|11.34|
+|DF|82|5.9%|28.05|
+|BA|69|5.0%|4.71|
+|GO|49|3.5%|7.05|
+|RO|41|3.0%|25.37|
+|PA|40|2.9%|4.74|
+|RJ|33|2.4%|1.99|
+|MS|32|2.3%|11.29|
+|CE|25|1.8%|2.80|
+|TO|20|1.4%|12.62|
+|ES|18|1.3%|4.38|
+|PB|15|1.1%|3.72|
+|AL|13|0.9%|4.16|
+|MA|11|0.8%|1.62|
+|PE|11|0.8%|1.22|
+|RN|9|0.6%|2.72|
+|PI|8|0.6%|2.45|
+|AM|6|0.4%|1.52|
+|AC|3|0.2%|3.62|
+|AP|1|0.1%|1.29|
+|RR|1|0.1%|1.58|
+|SE|1|0.1%|0.45|
 
-O número de presos por estado está relacionado à [porcentagem de votos em
+O número de presos por estado, dividido pela
+[população](populacao-2022.csv), está relacionado à [porcentagem de votos em
 Jair Bolsonaro no segundo turno da eleição presidencial de
 2022](eleicao-2022.csv), como indica o gráfico abaixo.
 
 ![figure](votos-bolsonaro-numero-presos.png)
 
-Neste gráfico, cada estado está representado pela sua sigla. Foram incluídos na análise os estados que apresentam número de presos maior do que 3, para efeitos de confiabilidade da análise. Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.57,_t_[21] = 3.21, _p_ < 0.01). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
+Neste gráfico, cada estado está representado pela sua sigla.
+Foram incluídos na análise os estados que apresentam número de presos maior do que 3, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.72,_t_[21] = 4.71, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
 
 ## Author
 

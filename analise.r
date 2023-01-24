@@ -28,7 +28,7 @@ mean.m <- mean.df$idade [2]
 aggregate (presos, idade ~ genero, median)
 t.test (idade ~ genero, presos)
 
-h <- hist (presos$idade)
+h <- hist (presos$idade, plot = FALSE)
 max.count <- max (h$counts)
 
 png (file = "histograma-idades.png", height = 640, width = 640, pointsize = 24)
@@ -49,33 +49,37 @@ legend ("topleft", legend = c("mulheres", "homens"), pch = 15,
         col = c("pink", "cyan"), inset = 0.05)
 dev.off ()
 
+election <- read.csv ("eleicao-2022.csv")
+population <- read.csv ("populacao-2022.csv")
+election$count <- election$count.pop <- NA
+for (i in names(uf.count)) {
+    idx <- which (election$uf == i)
+    election$count [idx] <- uf.count [i]
+    election$count.pop [idx] <- 1e6 * (uf.count [i]
+        / population$populacao [which (population$uf == i)])
+}
+
 uf.count <- sort (table (presos$uf), decreasing = TRUE)
 uf.count <- uf.count [which (names (uf.count) != "")]
-cat ("\n|estado|número de pessoas presas|porcentagem do total|\n|-|-|-|\n")
+cat ("\n|estado|número de pessoas presas|porcentagem do total|presos/população|\n|-|-|-|-|\n")
 s <- sum (uf.count)
 for (i in names (uf.count))
-    cat (sprintf ("|%s|%s|%.1f%%|\n", i, uf.count [i],
-                  100 * (uf.count [i] / s)))
+    cat (sprintf ("|%s|%s|%.1f%%|%.2f|\n", i, uf.count [i],
+                  100 * (uf.count [i] / s),
+                  election$count.pop [which (election$uf == i)]))
 
-length (which (presos$uf == ""))
-
-election <- read.csv ("eleicao-2022.csv")
-election$count <- NA
-for (i in names(uf.count))
-    election$count [which (election$uf == i)] <- uf.count [i]
-which (uf.count <= 5)
 election <- subset (election, count > 5)
-cor.test (election$votos.bolsonaro, log (election$count))
+cor.test (election$votos.bolsonaro, log (election$count.pop))
 
 png (file = "votos-bolsonaro-numero-presos.png", height = 640, width = 640,
      pointsize = 24)
 par (mar = c (5, 4, 0.1, 0.1))
-plot (election$votos.bolsonaro, election$count,
+plot (election$votos.bolsonaro, election$count.pop,
       log = "y", type = "n", las = 1, bty = "n",
       xlab = "% de votos em Bolsonaro 2º turno 2022",
-      ylab = "número de presos")
-text (election$votos.bolsonaro, election$count, labels = election$uf)
-fm <- lm (log (count) ~ votos.bolsonaro, election)
+      ylab = "número de presos por milhão de habitantes")
+text (election$votos.bolsonaro, election$count.pop, labels = election$uf)
+fm <- lm (log (count.pop) ~ votos.bolsonaro, election)
 x.pred <- seq (min (election$votos.bolsonaro), max (election$votos.bolsonaro),
                by = 0.1)
 lines (x.pred, exp (predict (fm,
