@@ -23,12 +23,6 @@ def main():
     for line in proc.stdout:
         line_utf8 = line.decode("utf-8")
 
-        m = re.match(r"^LUIZ FERNANDO DE SOUZA ALVES$", line_utf8)
-        if m:
-            continue
-        m = re.match(r"^12.06.1976$", line_utf8)
-        if m:
-            continue
         m = re.match(r"\x0c?([A-ZÇÃÔÉÚÕÂÁÍÊ]+ [A-ZÇÃÔÉÚÕÂÁÍÊ ]+)$", line_utf8)
         if m:
             names.append(m.group(1))

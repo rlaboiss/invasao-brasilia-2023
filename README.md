@@ -14,7 +14,7 @@ na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), c
 
 ### Gênero
 
-A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1388 nomes, na listagem publicada em 22 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
+A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1387 nomes, na listagem publicada em 25 de janeiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
 
 
 ### Idades
@@ -36,27 +36,27 @@ O número de pessoas por estado está indicado na tabela abaixo (a informação 
 
 |estado|número de pessoas presas|porcentagem do total|presos/população|
 |-|-|-|-|
-|SP|271|19.6%|5.91|
-|MG|201|14.5%|9.65|
-|PR|131|9.5%|11.15|
-|MT|104|7.5%|27.22|
-|RS|101|7.3%|9.29|
-|SC|90|6.5%|11.34|
-|DF|82|5.9%|28.05|
-|BA|67|4.8%|4.71|
-|GO|51|3.7%|7.05|
-|RO|42|3.0%|25.37|
-|PA|41|3.0%|4.74|
-|RJ|33|2.4%|1.99|
-|MS|32|2.3%|11.29|
+|SP|273|19.7%|5.93|
+|MG|203|14.6%|9.79|
+|PR|130|9.4%|10.98|
+|MT|103|7.4%|27.22|
+|RS|102|7.4%|9.20|
+|SC|89|6.4%|11.47|
+|DF|75|5.4%|25.66|
+|BA|68|4.9%|4.64|
+|GO|52|3.8%|7.48|
+|PA|41|3.0%|4.86|
+|RO|40|2.9%|24.75|
+|MS|33|2.4%|11.65|
+|RJ|32|2.3%|1.93|
 |CE|25|1.8%|2.80|
-|TO|19|1.4%|12.62|
-|ES|18|1.3%|4.38|
-|PB|15|1.1%|3.72|
+|ES|19|1.4%|4.62|
+|TO|19|1.4%|11.99|
+|PB|16|1.2%|3.97|
 |AL|13|0.9%|4.16|
-|MA|11|0.8%|1.62|
-|PE|11|0.8%|1.22|
-|RN|9|0.6%|2.72|
+|MA|12|0.9%|1.76|
+|PE|12|0.9%|1.33|
+|RN|10|0.7%|3.03|
 |PI|8|0.6%|2.45|
 |AM|6|0.4%|1.52|
 |AC|3|0.2%|3.62|
@@ -71,7 +71,7 @@ Jair Bolsonaro no segundo turno da eleição presidencial de
 ![figure](votos-bolsonaro-numero-presos.png)
 
 Neste gráfico, cada estado está representado pela sua sigla.
-Foram incluídos na análise os estados que apresentam número de presos maior do que 3, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.72, _t_[21] = 4.77, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
+Foram incluídos na análise os estados que apresentam número de presos maior do que 3, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.72, _t_[21] = 4.70, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
 
 ## Author
 
