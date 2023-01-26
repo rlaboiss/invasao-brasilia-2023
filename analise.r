@@ -1,21 +1,9 @@
-presos.raw <- read.csv ("presos.csv")
-nrow (presos.raw)
-table (presos.raw$genero)
-
-presos <- subset (presos.raw, data.nascimento != "")
-nrow (presos)
+presos <- read.csv ("presos.csv")
+table (presos$genero)
 
 presos$data.nascimento <- as.Date (presos$data.nascimento)
 presos$idade <- as.numeric (as.Date ("2023-01-08")
                             - presos$data.nascimento) / 365.25
-
-nrow (subset (presos, idade < 18))
-nrow (subset (presos, idade >= 80))
-
-presos <- subset (presos, idade >= 18 & idade < 80)
-nrow (presos)
-table (presos$genero)
-
 summary (presos$idade)
 
 n <- nrow (presos)
