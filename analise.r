@@ -52,12 +52,13 @@ uf.count <- uf.count [which (names (uf.count) != "")]
 
 election <- read.csv ("eleicao-2022.csv")
 population <- read.csv ("populacao-2022.csv")
-election$count <- election$count.pop <- NA
+election$count <- election$count.pop <- election$pop <- NA
 for (i in names(uf.count)) {
     idx <- which (election$uf == i)
     election$count [idx] <- uf.count [i]
-    election$count.pop [idx] <- 1e6 * (uf.count [i]
-        / population$populacao [which (population$uf == i)])
+    pop <- population$populacao [which (population$uf == i)]
+    election$count.pop [idx] <- 1e6 * (uf.count [i] / pop)
+    election$pop [idx] <- pop
 }
 
 cat ("\n|estado|número de pessoas presas|porcentagem do total|presos/população|\n|-|-|-|-|\n")

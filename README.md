@@ -73,6 +73,7 @@ Jair Bolsonaro no segundo turno da eleição presidencial de
 Neste gráfico, cada estado está representado pela sua sigla.
 Foram incluídos na análise os estados que apresentam número de presos maior do que 3, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.72, _t_[21] = 4.70, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
 
+Note que a correlação acima é feita entre o resultado da eleição e o número de presos **dividido pela população do estado** e não o número de presos simplesmente. A razão para esta escolha é que o número de presos é correlacionada à população de cada estado (_r_ = 0.84, _t_[24] = 7.50, _p_ < 0.001). Isto faz com que a população do estado se torne uma variável de confusão no estudo. A normalização do número de presos pela população do estado minimiza este problema.
 
 ### Código para esta análise
 
