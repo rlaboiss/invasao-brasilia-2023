@@ -70,7 +70,7 @@ for (i in names (uf.count))
 
 election <- subset (election, count > 5)
 
-cat ("\nTest de correlação entre votos en Bolsonaro e número de presos por estado:\n")
+cat ("\nTest de correlação entre votos em Bolsonaro e número de presos por estado:\n")
 print (cor.test (election$votos.bolsonaro, log (election$count.pop)))
 
 png (file = "votos-bolsonaro-numero-presos.png", height = 640, width = 640,
@@ -88,3 +88,6 @@ lines (x.pred, exp (predict (fm,
                              newdata = data.frame (votos.bolsonaro = x.pred))),
        lwd = 5, col = "#ff000080")
 dev.off ()
+
+cat ("\nTest de correlação entre número de presos e população por estado:\n")
+print (cor.test (election$pop, election$count))
