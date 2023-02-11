@@ -11,7 +11,9 @@ cat ("\nEstatíticas descriptivas por idade:\n")
 print (summary (presos$idade))
 
 n <- nrow (presos)
+cat ("\nPorcentagem de presos com idade entre 45 e 55 anos:\n")
 print (length (which (presos$idade > 45 & presos$idade < 55)) / n)
+cat ("\nPorcentagem de presos com idade entre 40 e 60 anos:\n")
 print (length (which (presos$idade > 40 & presos$idade < 60)) / n)
 
 mean.df <- aggregate (presos, idade ~ genero, mean)
