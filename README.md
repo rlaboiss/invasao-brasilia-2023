@@ -14,7 +14,7 @@ na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), c
 
 ### Gênero
 
-A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1379 nomes, na listagem publicada em 8 de fevereiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
+A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1354 nomes, na listagem publicada em 14 de fevereiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
 
 
 ### Idades
@@ -25,7 +25,7 @@ A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupa
 
 A idade mínima é de 18,0 anos e a máxima de 74,7 anos. 66,3% das pessoas têm entre 40 e 60 anos e 35,2% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
 
-A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,8 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_t_[1122.6] = 4.70, _p_ < 0.001).
+A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,8 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_t_[1122.2] = 4.70, _p_ < 0.001).
 
 Cabe observar que a faixa de idade com maior representatividade entre as mulheres é entre 50 e 55 anos.
 
@@ -37,16 +37,16 @@ O número de pessoas por estado está indicado na tabela abaixo (a informação 
 |estado|número de pessoas presas|porcentagem do total|presos/população|
 |-|-|-|-|
 |SP|275|19.8%|5.98|
-|MG|207|14.9%|9.98|
+|MG|208|15.0%|10.03|
 |PR|132|9.5%|11.15|
-|RS|106|7.6%|9.56|
-|MT|94|6.8%|24.84|
-|SC|86|6.2%|11.08|
+|RS|107|7.7%|9.65|
+|MT|93|6.7%|24.58|
+|SC|85|6.1%|10.95|
 |BA|69|5.0%|4.71|
-|DF|57|4.1%|19.50|
+|DF|56|4.0%|19.16|
 |GO|55|4.0%|7.91|
 |RO|41|3.0%|25.37|
-|MS|39|2.8%|13.76|
+|MS|40|2.9%|14.12|
 |PA|39|2.8%|4.62|
 |RJ|32|2.3%|1.93|
 |CE|26|1.9%|2.91|
@@ -73,7 +73,7 @@ Jair Bolsonaro no segundo turno da eleição presidencial de
 Neste gráfico, cada estado está representado pela sua sigla.
 Foram incluídos na análise os estados que apresentam número de presos maior do que 5, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.76, _t_[20] = 5.29, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
 
-Note que a correlação acima é feita entre o resultado da eleição e o número de presos **dividido pela população do estado** e não o número de presos simplesmente. A razão para esta escolha é que o número de presos é correlacionada à população de cada estado (_r_ = 0.84, _t_[20] = 6.83, _p_ < 0.001). Isto faz com que a população do estado se torne uma variável de confusão no estudo. A normalização do número de presos pela população do estado minimiza este problema.
+Note que a correlação acima é feita entre o resultado da eleição e o número de presos **dividido pela população do estado** e não o número de presos simplesmente. A razão para esta escolha é que o número de presos é correlacionada à população de cada estado (_r_ = 0.84, _t_[20] = 6.84, _p_ < 0.001). Isto faz com que a população do estado se torne uma variável de confusão no estudo. A normalização do número de presos pela população do estado minimiza este problema.
 
 ### Código para esta análise
 
