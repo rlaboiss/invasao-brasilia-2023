@@ -6,7 +6,7 @@
 Este repositório contém os dados publicados pela Secretaria de Estado de Administração Penitenciária do Distrito Federal (SEAPE-DF), assim que o programa em R para análise demográfica dos mesmos.
 
 A lista de pessoas presas nos atos terroristas na Praça dos Três Poderes é atualizada frequentemente 
-na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), contendo os nomes completos, as datas de nascimento e o estado de origem das pessoas.
+na [pagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), contendo os nomes completos, as datas de nascimento e o estado de origem das pessoas.
 
 
 ## Análise
@@ -14,7 +14,7 @@ na [ṕagina da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), c
 
 ### Gênero
 
-A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1298 nomes, na listagem publicada em 17 de fevereiro de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
+A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 935 nomes, na listagem publicada em 22 de março de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
 
 
 ### Idades
@@ -23,45 +23,45 @@ A distribuição de idades é mostrada no gráfico abaixo, com as pessoas agrupa
 
 ![figure](histograma-idades.png)
 
-A idade mínima é de 18,0 anos e a máxima de 74,7 anos. 66,3% das pessoas têm entre 40 e 60 anos e 35,2% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
+A idade mínima é de 18,0 anos e a máxima de 74,7 anos. 66,2% das pessoas têm entre 40 e 60 anos e 35,3% deles têm entre 45 e 55 anos. Está claro que o grosso do contingente é formado por pessoas de meia idade.
 
-A mediana de idade das mulheres é de 47,9 anos e a dos homens de 44,8 anos. A média de idade das mulheres é de 46,4 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,6 anos entre homens e mulheres é estatisticamente significativa (_t_[1122.2] = 4.70, _p_ < 0.001).
+A mediana de idade das mulheres é de 47,8 anos e a dos homens de 44,9 anos. A média de idade das mulheres é de 46,3 anos e a dos homens é de 43,8 anos. Esta diferença de idade de 2,5 anos entre homens e mulheres é estatisticamente significativa (_t_[1114.6] = 4.55, _p_ < 0.001).
 
 Cabe observar que a faixa de idade com maior representatividade entre as mulheres é entre 50 e 55 anos.
 
 
 ## Procedência
 
-O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 43 pessoas):
+O número de pessoas por estado está indicado na tabela abaixo (a informação do estado de origem está ausente para 38 pessoas):
 
 |estado|número de pessoas presas|porcentagem do total|presos/população|
 |-|-|-|-|
-|SP|276|19.9%|6.00|
-|MG|208|15.0%|10.03|
-|PR|132|9.5%|11.15|
-|RS|106|7.6%|9.56|
-|MT|93|6.7%|24.58|
-|SC|86|6.2%|11.08|
-|BA|69|5.0%|4.71|
-|DF|56|4.0%|19.16|
-|GO|55|4.0%|7.91|
-|RO|41|3.0%|25.37|
-|MS|40|2.9%|14.12|
-|PA|39|2.8%|4.62|
-|RJ|32|2.3%|1.93|
-|CE|26|1.9%|2.91|
-|ES|20|1.4%|4.87|
-|TO|20|1.4%|12.62|
-|PB|16|1.2%|3.97|
-|MA|15|1.1%|2.21|
-|PE|14|1.0%|1.55|
+|SP|273|19.6%|5.93|
+|MG|201|14.5%|9.69|
+|PR|134|9.6%|11.32|
+|MT|104|7.5%|27.48|
+|RS|101|7.3%|9.11|
+|SC|87|6.3%|11.21|
+|DF|79|5.7%|27.02|
+|BA|67|4.8%|4.57|
+|GO|50|3.6%|7.19|
+|PA|42|3.0%|4.97|
+|RO|42|3.0%|25.98|
+|RJ|34|2.4%|2.05|
+|MS|32|2.3%|11.29|
+|CE|25|1.8%|2.80|
+|ES|19|1.4%|4.62|
+|TO|19|1.4%|11.99|
+|PB|15|1.1%|3.72|
 |AL|13|0.9%|4.16|
-|RN|10|0.7%|3.03|
+|MA|12|0.9%|1.76|
+|PE|12|0.9%|1.33|
+|RN|11|0.8%|3.33|
 |PI|8|0.6%|2.45|
-|AM|5|0.4%|1.27|
+|AM|6|0.4%|1.52|
 |AC|3|0.2%|3.62|
-|SE|2|0.1%|0.90|
 |RR|1|0.1%|1.58|
+|SE|1|0.1%|0.45|
 
 O número de presos por estado, dividido pela
 [população](populacao-2022.csv), está relacionado à [porcentagem de votos em
@@ -71,9 +71,9 @@ Jair Bolsonaro no segundo turno da eleição presidencial de
 ![figure](votos-bolsonaro-numero-presos.png)
 
 Neste gráfico, cada estado está representado pela sua sigla.
-Foram incluídos na análise os estados que apresentam número de presos maior do que 5, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.76, _t_[20] = 5.31, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
+Foram incluídos na análise os estados que apresentam número de presos maior do que 5, para efeitos de confiabilidade da análise. A população de cada estado corresponde àquela publicada pelo IBGS na [prévia do censo de 2022](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf). Note que o eixo vertical do gráfico (número de presos) está em escala logarítmica, o que é adequado para variáveis de contagem. A correlação entre as duas variáveis é significativamente diferente de zero (_r_ = 0.72, _t_[21] = 4.75, _p_ < 0.001). A linha de regressão entre as duas variáveis está indicada em vermelho no gráfico.
 
-Note que a correlação acima é feita entre o resultado da eleição e o número de presos **dividido pela população do estado** e não o número de presos simplesmente. A razão para esta escolha é que o número de presos é correlacionada à população de cada estado (_r_ = 0.84, _t_[20] = 6.86, _p_ < 0.001). Isto faz com que a população do estado se torne uma variável de confusão no estudo. A normalização do número de presos pela população do estado minimiza este problema.
+Note que a correlação acima é feita entre o resultado da eleição e o número de presos **dividido pela população do estado** e não o número de presos simplesmente. A razão para esta escolha é que o número de presos é correlacionada à população de cada estado (_r_ = 0.82, _t_[21] = 6.62, _p_ < 0.001). Isto faz com que a população do estado se torne uma variável de confusão no estudo. A normalização do número de presos pela população do estado minimiza este problema.
 
 ### Código para esta análise
 
