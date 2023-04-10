@@ -18,7 +18,7 @@ def main():
 
     names = []
     dates = []
-    states = []
+    ufs = []
 
     for line in proc.stdout:
         line_utf8 = line.decode("utf-8")
@@ -31,13 +31,13 @@ def main():
             dates.append(f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}")
         m = re.match(r"^([A-T][A-Z])$", line_utf8)
         if m:
-            states.append(m.group(1))
+            ufs.append(m.group(1))
 
     if len(names) != len(dates):
         sys.stderr.write(f"{prog}:E: Different number of names and dates\n")
         exit(1)
 
-    df = pd.DataFrame({'name': names, 'date': dates, 'uf': states})
+    df = pd.DataFrame({'name': names, 'date': dates, 'uf': ufs})
     df.to_csv(sys.stdout, index=False)
 
 
