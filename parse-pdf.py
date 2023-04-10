@@ -20,18 +20,27 @@ def main():
     dates = []
     ufs = []
 
+    state = "start"
     for line in proc.stdout:
         line_utf8 = line.decode("utf-8")
-
-        m = re.match(r"\x0c?([A-ZÇÃÔÉÚÕÂÁÍÊ]+ [A-ZÇÃÔÉÚÕÂÁÍÊ ]+)$", line_utf8)
+        m = re.match(r"\x0c?([A-ZÇÃÔÉÚÕÂÁÍÊ]+ [A-ZÇÃÔÉÚÕÂÁÍÊl ]+)$", line_utf8)
         if m:
             names.append(m.group(1))
+            if state == "start":
+                state = "got-name"
+            else:
+                dates.append("")
+                state = "got-date"
         m = re.match(r"^([0-9]+)\.([0-9]+)\.([0-9][0-9][0-9][0-9])$", line_utf8)
         if m:
             dates.append(f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}")
+            if state == "got-name":
+                state = "got-date"
         m = re.match(r"^([A-T][A-Z])$", line_utf8)
         if m:
             ufs.append(m.group(1))
+            if state == "got-date":
+                state = "start"
 
     if len(names) != len(dates):
         sys.stderr.write(f"{prog}:E: Different number of names and dates\n")
