@@ -14,7 +14,7 @@ na [página da SEAPE-DF](https://seape.df.gov.br/prisoes-dos-atentados-bsb/), co
 
 ### Gênero
 
-A [lista atual](presos.csv), contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1392 nomes, na listagem publicada em 31 de março de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
+A [lista atual](presos.csv) contém 1429 nomes. Esta lista não corresponde à ultima listagem disponibilizada pela SEAPE, que contém 1392 nomes, na listagem publicada em 31 de março de 2023. Todos os nomes que figuravam nas listas previamente publicadas foram mantidos. Destas 1429 pessoas, 494 são mulheres e 935 são homens.
 
 
 ### Idades
