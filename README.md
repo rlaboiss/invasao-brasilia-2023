@@ -74,6 +74,13 @@ Neste gráfico, cada estado está representado pela sua sigla. Foram incluídos 
 
 Note que a correlação acima é feita entre o resultado da eleição e o número de presos **dividido pela população do estado** e não o número de presos simplesmente. A razão para esta escolha é que o número de presos é correlacionada à população de cada estado (_r_ = 0.81, _t_[21] = 6.25, _p_ < 0.001). Isto faz com que a população do estado se torne uma variável de confusão no estudo. A normalização do número de presos pela população do estado minimiza este problema.
 
+
+### Repercussão do presente estudo
+
+Uma versão preliminar deste estudo foi mencionada em um
+[artigo](https://www.poder360.com.br/opiniao/perfil-de-extremistas-do-8-de-janeiro-revela-revolta-dos-bagrinhos/) de autoria de Rudá Ricci no site Poder360.
+
+
 ### Código para esta análise
 
 O código que permite obter os resultados relatados acima, assim como os gráficos, se encontra no arquivo [analise.r](analise.r), escrito na linguagem de programação [R](https://www.r-project.org/).
@@ -96,3 +103,6 @@ eval: (visual-line-mode)
 eval: (flyspell-mode)
 End:
 --->
+
+<!--  LocalWords:  Rudá Ricci
+ -->
